@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 26 十二月 2013 19:58:12
+" Last-modified: 28 Dec 2013 12:40:40 PM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -45,7 +45,6 @@ set nobackup                    " trun off backup file
 set nowritebackup
 set listchars=tab:▸\ ,eol:¬     " show invisible characters with the same characters that TextMate uses
 au FocusLost * :wa              " save on losing focus
-cd $USERPROFILE\Desktop         " default working directory
 
 "" Whitespace
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
@@ -62,17 +61,18 @@ set showmatch
 set incsearch                   " incremental searching
 
 "" Chinese environment
-set guifont=Consolas:h12
-set guifontwide=NSimsun:h12
-set langmenu=zh_CN.UTF-8
-source $VIMRUNTIME/delmenu.vim
-source $VIMRUNTIME/menu.vim
-language messages zh_CN.UTF-8
-if has("win32")
-  set termencoding=cp936
-endif
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-set fileencoding=utf-8
+"set guifont=Consolas:h12
+"set guifontwide=NSimsun:h12
+"set langmenu=zh_CN.UTF-8
+"source $VIMRUNTIME/delmenu.vim
+"source $VIMRUNTIME/menu.vim
+"language messages zh_CN.UTF-8
+"if has("win32")
+"  set termencoding=cp936
+"  cd $USERPROFILE\Desktop         " default working directory
+"endif
+"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+"set fileencoding=utf-8
 
 "" GUI options
 if has('gui_running')
