@@ -1,5 +1,5 @@
 " File: .vimrc
-" Version: 1
+" Version: 1.0
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
@@ -11,10 +11,8 @@ syntax on
 filetype plugin indent on       " load file type plugins + indentation
 
 "" Load my color scheme
-"colorscheme jellybeans
-set background=dark
-colorscheme solarized
-"colorscheme mustang
+set t_Co=256
+colorscheme jellybeans
 
 "" Disable cursor blinking
 let &guicursor = substitute(&guicursor, 'n-v-c:', '&blinkon0-', '')
