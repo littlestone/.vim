@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 28 Dec 2013 12:40:40 PM
+" Last-modified: 06 Jan 2014 9:58:59 AM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -65,10 +65,12 @@ set incsearch                   " incremental searching
 "source $VIMRUNTIME/delmenu.vim
 "source $VIMRUNTIME/menu.vim
 "language messages zh_CN.UTF-8
-"if has("win32")
-"  set termencoding=cp936
-"  cd $USERPROFILE\Desktop         " default working directory
-"endif
+if has("win32")
+  set guifont=Consolas:h12
+  set guifontwide=NSimsun:h12
+  set termencoding=cp936
+  cd $USERPROFILE\Desktop         " default working directory
+endif
 "set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 "set fileencoding=utf-8
 
@@ -113,7 +115,7 @@ if has("autocmd")
   autocmd BufWritePre,FileWritePre *   ks|call UpdateTimeStamp()|'s
 
   " change _vimrc with auto reload
-  autocmd! bufwritepost _vimrc source ~\_vimrc
+  autocmd! bufwritepost .vimrc source ~\.vimrc
 
 endif
 
