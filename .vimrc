@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 06 Jan 2014 9:58:59 AM
+" Last-modified: 09 Jan 2014 8:21:30 PM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -36,6 +36,7 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
+set number
 set relativenumber
 set clipboard+=unnamed          " share windows clipboard
 set tabpagemax=100
@@ -66,8 +67,8 @@ set incsearch                   " incremental searching
 "source $VIMRUNTIME/menu.vim
 "language messages zh_CN.UTF-8
 if has("win32")
-  set guifont=Consolas:h12
-  set guifontwide=NSimsun:h12
+  set guifont=Consolas:h11
+  set guifontwide=NSimsun:h11
   set termencoding=cp936
   cd $USERPROFILE\Desktop         " default working directory
 endif
@@ -88,9 +89,9 @@ if has('gui_running')
   set textwidth=79                " i like about 79 character width lines
   set lines=40                    " Set 40 lines for the display
   set cmdheight=2                 " 2 for the status line.
-  set columns=79                  " add columns for the Project plugin
+  set columns=89                  " add columns for the Project plugin
   set formatoptions=qrn1
-  set colorcolumn=85
+  set colorcolumn=89
   set mouse=a                     " enable use of mouse
   let html_use_css=1              " for the TOhtml command
 endif
