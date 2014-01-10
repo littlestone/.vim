@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 10 Jan 2014 9:57:13 AM
+" Last-modified: 10 Jan 2014 1:37:21 PM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -60,15 +60,15 @@ set showmatch
 set incsearch                   " incremental searching
 
 "" Chinese environment
-"set guifont=Consolas:h12
-"set guifontwide=NSimsun:h12
+"set guifont=Consolas:h10
+"set guifontwide=NSimsun:h10
 "set langmenu=zh_CN.UTF-8
 "source $VIMRUNTIME/delmenu.vim
 "source $VIMRUNTIME/menu.vim
 "language messages zh_CN.UTF-8
 if has("win32")
-  set guifont=Consolas:h11
-  set guifontwide=NSimsun:h11
+  set guifont=Consolas:h10
+  set guifontwide=NSimsun:h10
   set termencoding=cp936
   cd $USERPROFILE\Desktop         " default working directory
 endif
