@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 09 Jan 2014 8:21:30 PM
+" Last-modified: 10 Jan 2014 9:57:13 AM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -86,12 +86,12 @@ if has('gui_running')
   "   T: enable toolbar on Win32
   set go=gmt
   set nowrap                      " don't wrap lines
-  set textwidth=79                " i like about 79 character width lines
-  set lines=40                    " Set 40 lines for the display
+  set textwidth=79                " line character width
+  set lines=37                    " Set number of lines for the display
   set cmdheight=2                 " 2 for the status line.
-  set columns=89                  " add columns for the Project plugin
+  set columns=79                  " add columns for the Project plugin
   set formatoptions=qrn1
-  set colorcolumn=89
+  set colorcolumn=85
   set mouse=a                     " enable use of mouse
   let html_use_css=1              " for the TOhtml command
 endif
