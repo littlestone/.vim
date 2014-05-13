@@ -3,7 +3,7 @@
 " Author: Junjie Tang
 " Created: 25 Dec 2013 23:49:19
 " Vim: revisited By Mislav Marohnic on 12 Dec 2011
-" Last-modified: 10 Jan 2014 1:37:21 PM
+" Last-modified: 16 Jan 2014 2:40:46 PM
 
 "" Vim package manager
 execute pathogen#infect()
@@ -86,10 +86,10 @@ if has('gui_running')
   "   T: enable toolbar on Win32
   set go=gmt
   set nowrap                      " don't wrap lines
-  set textwidth=79                " line character width
+  set textwidth=85                " line character width
   set lines=37                    " Set number of lines for the display
   set cmdheight=2                 " 2 for the status line.
-  set columns=79                  " add columns for the Project plugin
+  set columns=85                  " add columns for the Project plugin
   set formatoptions=qrn1
   set colorcolumn=85
   set mouse=a                     " enable use of mouse
@@ -148,18 +148,6 @@ nnoremap <leader><tab> :Sscratch<CR>
 
 " quicker escaping
 inoremap jj <ESC>
-
-" disable the arrow keys while you’re in normal mode
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-nnoremap j gj
-nnoremap k gk
 
 " quickly alternate between opened buffers
 nnoremap <leader><leader> <c-^>
